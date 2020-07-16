@@ -73,7 +73,7 @@
              ; "-Dorg.eclipse.jetty.util.log.class=org.eclipse.jetty.util.log.StrErrLog"
              ; "-Dorg.eclipse.jetty.LEVEL=INFO"
              ; "-Dorg.eclipse.jetty.websocket.LEVEL=INFO"]
-  :profiles {:security {:plugins [[com.livingsocial/lein-dependency-check "1.1.1"]]
+  :profiles {:security {:plugins [[com.livingsocial/lein-dependency-check "1.1.4"]]
                         :dependency-check {:output-format [:all]
                                            :suppression-file "resources/security/suppression.xml"
                                            :properties-file "resources/security/dependencycheck.properties"}}

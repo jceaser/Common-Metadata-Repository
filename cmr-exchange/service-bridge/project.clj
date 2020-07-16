@@ -58,7 +58,7 @@
         cmr.opendap.core]
   :profiles {:ubercompile {:aot :all
                            :source-paths ["test"]}
-             :security {:plugins [[com.livingsocial/lein-dependency-check "1.1.2"]]
+             :security {:plugins [[com.livingsocial/lein-dependency-check "1.1.4"]]
                         :dependency-check {:output-format [:all]
                                            :suppression-file "resources/security/suppression.xml"}
                         :source-paths ^:replace ["src"]

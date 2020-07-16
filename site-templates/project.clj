@@ -5,7 +5,7 @@
             :name "Apache License, Version 2.0"
             :url "http://www.apache.org/licenses/LICENSE-2.0"}
   :dependencies [[org.clojure/clojure "1.10.0"]]
-  :profiles {:security {:plugins [[com.livingsocial/lein-dependency-check "1.1.1"]]
+  :profiles {:security {:plugins [[com.livingsocial/lein-dependency-check "1.1.4"]]
                         :dependency-check {:output-format [:all]
                                            :suppression-file "resources/security/suppression.xml"}}
              :test {:plugins [[lein-shell "0.5.0"]

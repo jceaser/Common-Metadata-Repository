@@ -19,8 +19,9 @@
   :repl-options {:init-ns user}
   :jvm-opts ^:replace ["-server"
                        "-Dclojure.compiler.direct-linking=true"]
-  :profiles {:security {:plugins [[com.livingsocial/lein-dependency-check "1.1.1"]]
+  :profiles {:security {:plugins [[com.livingsocial/lein-dependency-check "1.1.4"]]
                         :dependency-check {:output-format [:all]
+                                           :properties-file "resources/security/dependencycheck.properties"
                                            :suppression-file "resources/security/suppression.xml"}}
              :dev {:exclusions [[org.clojure/tools.nrepl]]
                    :dependencies [[nasa-cmr/cmr-transmit-lib "0.1.0-SNAPSHOT"]

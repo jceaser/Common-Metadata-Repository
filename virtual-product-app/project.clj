@@ -20,8 +20,9 @@
                        "-Dclojure.compiler.direct-linking=true"]
   :repl-options {:init-ns user}
   :test-paths ["test" "int-test"]
-  :profiles {:security {:plugins [[com.livingsocial/lein-dependency-check "1.1.1"]]
+  :profiles {:security {:plugins [[com.livingsocial/lein-dependency-check "1.1.4"]]
                         :dependency-check {:output-format [:all]
+                                           :properties-file "resources/security/dependencycheck.properties"
                                            :suppression-file "resources/security/suppression.xml"}}
              :dev {:dependencies [[org.clojars.gjahad/debug-repl "0.3.3"]
                                   [org.clojure/tools.namespace "0.2.11"]

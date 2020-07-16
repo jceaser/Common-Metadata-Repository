@@ -36,7 +36,7 @@
   :jvm-opts ^:replace ["-server"
                        "-Dclojure.compiler.direct-linking=true"]
   :jar-inclusions [#"\.umm-version"]
-  :profiles {:security {:plugins [[com.livingsocial/lein-dependency-check "1.1.1"]]
+  :profiles {:security {:plugins [[com.livingsocial/lein-dependency-check "1.1.4"]]
                         :dependency-check {:output-format [:all]
                                            :suppression-file "resources/security/suppression.xml"
                                            :properties-file "resources/security/dependencycheck.properties"}}

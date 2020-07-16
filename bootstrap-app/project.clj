@@ -41,8 +41,9 @@
   :repl-options {:init-ns user}
   :jvm-opts ^:replace ["-server"
                        "-Dclojure.compiler.direct-linking=true"]
-  :profiles {:security {:plugins [[com.livingsocial/lein-dependency-check "1.1.1"]]
+  :profiles {:security {:plugins [[com.livingsocial/lein-dependency-check "1.1.4"]]
                         :dependency-check {:output-format [:all]
+                                           :properties-file "resources/security/dependencycheck.properties"
                                            :suppression-file "resources/security/suppression.xml"}}
              :dev {:dependencies [[org.clojure/tools.namespace "0.2.11"]
                                   [org.clojars.gjahad/debug-repl "0.3.3"]]

@@ -37,8 +37,9 @@
   :jvm-opts ^:replace ["-server"
                        "-Dclojure.compiler.direct-linking=true"]
   :test-paths ["test" "int-test"]
-  :profiles {:security {:plugins [[com.livingsocial/lein-dependency-check "1.1.1"]]
+  :profiles {:security {:plugins [[com.livingsocial/lein-dependency-check "1.1.4"]]
                         :dependency-check {:output-format [:all]
+                                           :properties-file "resources/security/dependencycheck.properties"
                                            :suppression-file "resources/security/suppression.xml"}}
              :dev {:dependencies [[clj-http "2.3.0"]
                                   [nasa-cmr/cmr-mock-echo-app "0.1.0-SNAPSHOT"]

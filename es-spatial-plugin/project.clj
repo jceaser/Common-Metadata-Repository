@@ -33,7 +33,7 @@
   :aot [cmr.elasticsearch.plugins.spatial.script.core
         cmr.elasticsearch.plugins.spatial.factory.core
         cmr.elasticsearch.plugins.spatial.plugin]
-  :profiles {:security {:plugins [[com.livingsocial/lein-dependency-check "1.1.1"]]
+  :profiles {:security {:plugins [[com.livingsocial/lein-dependency-check "1.1.4"]]
                         :dependency-check {:output-format [:all]
                                            :suppression-file "resources/security/suppression.xml"}}
              :dev {:exclusions [[org.clojure/tools.nrepl]]
